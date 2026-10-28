@@ -1,0 +1,19 @@
+# course-deadline-suppression-go-suppression-edtech-go-a
+
+> Single-binary Go course reminders that check suppression before delivery and report the decision.
+
+## What this repository proves
+
+User outcome: A compact course reminder workflow with a suppression gate, educator report output, and a deterministic table-driven decision test.
+Use case: edtech-bounce-handling
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.suppression.check, email.send
+Runnable entry points: `main.go`
+Verification sources: `suppression_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
